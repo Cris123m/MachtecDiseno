@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.navbar {
+  font-family: "Bebas Neue", Bold;
+  font-size: 25px;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  filter: drop-shadow(0px 10px 5px #000);
+}
+.banner .innerdiv {
+  background-color: #1B1B90;
+}
+.banner .innerdiv h1 {
+  color: #fff;
+}
+.banner .innerdiv a {
+  color: #fff;
+}
+.banner .innerdiv a:hover {
+  color: #ebedef;
+}
+
+.innerdiv {
+  width: 100%;
+  height: 750px;
+  z-index: -1;
+  padding: 60px 20px 20px 20px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+}
+.innerdiv .laptop-cel-1 {
+  width: 650px;
+  max-width: 100%;
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+.innerdiv .laptop-cel-1 img {
+  max-width: 90%;
+  right: 0;
+}
+@media only screen and (max-width: 762px) {
+  .innerdiv .laptop-cel-1 {
+    top: 25%;
+  }
+}
+
+.item1 {
+  position: absolute;
+  top: 650px;
+  width: 100%;
+  z-index: -2;
+  filter: drop-shadow(0px 10px 5px #000);
+}
+.item1 .innerdiv {
+  background-color: #ebedef;
+  z-index: -2;
+  padding: 0 20px 20px 20px;
+}
+.item1 .innerdiv .bluebox {
+  background-color: #1B1B90;
+  color: #ebedef;
+  font-size: 25px;
+  text-align: center;
+  padding: 100px 30px 30px 30px;
+  height: 750px;
+  cursor: default;
+}
+.item1 .innerdiv .bluebox h1 {
+  color: #008cff;
+  padding-bottom: 50px;
+}
+.item1 .innerdiv .bluebox p {
+  white-space: pre-line;
+}
+.item1 .innerdiv .bluebox .icons {
+  font-size: 45px;
+}
+.item1 .innerdiv .bluebox .btn-primary {
+  background-color: #008cff;
+  font-size: 20px;
+}
+.item1 .innerdiv .bluebox:hover {
+  background-color: #008cff;
+}
+.item1 .innerdiv .bluebox:hover h1 {
+  color: #1B1B90;
+}
+.item1 .innerdiv .bluebox:hover .btn-primary {
+  background-color: #1B1B90;
+}
+.item1 .innerdiv .bluebox:hover .btn-primary:hover {
+  background-color: #008cff;
+}
+@media only screen and (max-width: 762px) {
+  .item1 .innerdiv .bluebox {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+  }
+}
+@media only screen and (max-width: 762px) {
+  .item1 .innerdiv {
+    height: 2050px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  }
+  .item1 .innerdiv .col-md-4 {
+    filter: drop-shadow(0px 10px 5px #000);
+    counter-increment: cont 1;
+  }
+  .item1 .innerdiv .col-md-4:nth-of-type(2) {
+    top: -100px;
+    z-index: -1;
+  }
+  .item1 .innerdiv .col-md-4:nth-of-type(3) {
+    top: -200px;
+    z-index: -2;
+  }
+}
+.item1 .fondo {
+  position: relative;
+  top: -750px;
+  height: 750px;
+  z-index: -1;
+  align-items: center;
+  margin-top: 8rem;
+}
+.item1 .fondo .presentacion1 {
+  position: relative;
+  animation-name: flotador;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.item1 .fondo .anim-1 {
+  position: absolute;
+  height: auto;
+  width: 40%;
+  top: 25%;
+}
+.item1 .fondo .anim-2 {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  width: 70%;
+}
+
+.item2 {
+  position: absolute;
+  top: 1300px;
+  width: 100%;
+  z-index: -3;
+  filter: drop-shadow(0px 10px 5px #000);
+}
+.item2 .innerdiv {
+  background-color: #ebedef;
+  z-index: -2;
+  padding: 0 20px 20px 20px;
+}
+.item2 .innerdiv .bluebox {
+  background-color: #525252;
+  color: #fff;
+  text-align: center;
+  padding: 100px 30px 30px 30px;
+  height: 750px;
+}
+.item2 .innerdiv .bluebox:hover {
+  background-color: #fff;
+  color: #313131;
+}
+@media only screen and (max-width: 762px) {
+  .item2 .innerdiv .bluebox {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+  }
+}
+@media only screen and (max-width: 762px) {
+  .item2 .innerdiv {
+    height: 2050px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  }
+  .item2 .innerdiv .col-md-4 {
+    filter: drop-shadow(0px 10px 5px #000);
+    counter-increment: cont 1;
+  }
+  .item2 .innerdiv .col-md-4:nth-of-type(2) {
+    top: -100px;
+    z-index: -1;
+  }
+  .item2 .innerdiv .col-md-4:nth-of-type(3) {
+    top: -200px;
+    z-index: -2;
+  }
+}
+@media only screen and (max-width: 762px) {
+  .item2 {
+    top: 2600px;
+  }
+}
+
+.bussinesclients {
+  position: relative;
+  top: 2000px;
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  color: #313131;
+}
+
+footer {
+  position: relative;
+  top: 2000px;
+  height: 300px;
+  background-color: #008cff;
+  padding: 20px;
+  color: #fff;
+}
+footer .bancos1 {
+  position: relative;
+  background-color: #ebedef;
+  top: 30px;
+  left: -20px;
+  padding: 10px;
+  width: 305px;
+  clip-path: polygon(0 0, 88% 0, 100% 100%, 0% 100%);
+}
+footer .bancos1 img {
+  height: 30px;
+  padding-right: 50px;
+}
+footer .bancos1 #visa {
+  padding-left: 30px;
+}
+footer .bancos1 #mastercard {
+  height: 40px;
+}
+footer .bancos2 {
+  position: relative;
+  background-color: #ebedef;
+  top: 60px;
+  left: -5px;
+  padding: 0px;
+  width: 355px;
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+}
+footer .bancos2 img {
+  height: 40px;
+}
+footer .bancos2 div {
+  padding: 10px;
+}
+footer .bancos2 .bpichincha {
+  background-color: #fd0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 762px) {
+  .bussinesclients {
+    top: 4600px;
+  }
+
+  footer {
+    top: 4600px;
+  }
+  footer .bancos1 {
+    padding: 5px;
+    width: 250px;
+  }
+  footer .bancos1 img {
+    height: 25px;
+    padding-right: 20px;
+  }
+  footer .bancos1 #visa {
+    padding-left: 30px;
+  }
+  footer .bancos1 #mastercard {
+    height: 40px;
+  }
+  footer .bancos2 {
+    width: 300px;
+  }
+  footer .bancos2 img {
+    height: 35px;
+  }
+  footer .bancos2 div {
+    padding: 5px;
+  }
+  footer .bancos2 .bpichincha {
+    background-color: #fd0;
+    text-align: center;
+  }
+}
+.contenedor_carga {
+  background-color: #1B1B90;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+.contenedor_carga .carga {
+  height: 35vw;
+  width: 35vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.contenedor_carga .carga img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes flotador {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
