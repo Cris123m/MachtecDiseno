@@ -313,6 +313,18 @@ footer .bancos2 .bpichincha {
   height: 100%;
 }
 
+.caja3 {
+  /* &:hover{
+      animation-name: sombraIzquierda;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+      padding-left: 0;
+      -webkit-box-shadow: -67px 0px 40px 22px rgba(0,140,255,1);
+      -moz-box-shadow: -67px 0px 40px 22px rgba(0,140,255,1);
+      box-shadow: -67px 0px 40px 22px rgba(0,140,255,1);
+  } */
+}
+
 @keyframes flotador {
   0% {
     top: 0;
@@ -322,6 +334,18 @@ footer .bancos2 .bpichincha {
   }
   100% {
     top: 0;
+  }
+}
+@keyframes sombraIzquierda {
+  from {
+    -webkit-box-shadow: 0;
+    -moz-box-shadow: 0;
+    box-shadow: none;
+  }
+  to {
+    -webkit-box-shadow: -67px 0px 40px 22px #008cff;
+    -moz-box-shadow: -67px 0px 40px 22px #008cff;
+    box-shadow: -67px 0px 40px 22px #008cff;
   }
 }
 
