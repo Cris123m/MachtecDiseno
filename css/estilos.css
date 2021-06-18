@@ -1,7 +1,144 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.orange-bg:hover {
+  background-color: #ff7f2c;
+  cursor: pointer;
+  /* 
+  -webkit-text-stroke: 0.5px $negro;
+  color: $blanco;  */
+}
+
+.violet-bg:hover {
+  background-color: #814EFA;
+  cursor: pointer;
+  /* 
+  -webkit-text-stroke: 0.5px $negro;
+  color: $blanco;  */
+}
+.violet-bg:hover {
+  color: #fff;
+}
+
+.lightblue-bg:hover {
+  background-color: #00B8FC;
+  cursor: pointer;
+  /* 
+  -webkit-text-stroke: 0.5px $negro;
+  color: $blanco;  */
+}
+
+.red-bg:hover {
+  background-color: #FF2947;
+  cursor: pointer;
+  /* 
+  -webkit-text-stroke: 0.5px $negro;
+  color: $blanco;  */
+}
+.red-bg:hover {
+  color: #fff;
+}
+
+.turquoise-bg:hover {
+  background-color: #00EAD0;
+  cursor: pointer;
+  /* 
+  -webkit-text-stroke: 0.5px $negro;
+  color: $blanco;  */
+}
+
+.limegreen-bg:hover {
+  background-color: #DCFD00;
+  cursor: pointer;
+  /* 
+  -webkit-text-stroke: 0.5px $negro;
+  color: $blanco;  */
+}
+
+.back-blue {
+  background-color: #1B1B90;
+}
+.back-blue .navbar {
+  padding-top: 0;
+}
+.back-blue .navbar .nav-item .nav-link {
+  color: #1B1B90;
+}
+.back-blue .navbar .nav-item:hover {
+  background-color: #1B1B90;
+  color: #1B1B90;
+  border-radius: 0 0 10px 10px;
+}
+.back-blue .navbar .nav-item:hover .nav-link {
+  color: #fff;
+}
+.back-blue .navbar .navbar-toggler {
+  color: #1B1B90;
+}
+
 .navbar {
   font-family: "Bebas Neue", Bold;
   font-size: 25px;
+  padding-top: 0;
+}
+.navbar .nav-item:hover {
+  background-color: #fff;
+  color: #1B1B90;
+  border-radius: 0 0 10px 10px;
+}
+.navbar .nav-item:hover .nav-link {
+  color: #1B1B90;
+}
+.navbar .white-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 0;
+}
+
+/* CSS used here will be applied after bootstrap.css */
+.navbar-nav {
+  margin-bottom: 0;
+}
+.navbar-nav > li.dropdown.show {
+  position: static;
+}
+.navbar-nav > li.dropdown.show .dropdown-menu {
+  display: table;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  padding: 0;
+  /* overflow: hidden; */
+}
+.navbar-nav > li.dropdown.show .dropdown-menu > a {
+  display: table-cell;
+  width: 33.33%;
+}
+.navbar-nav > li.dropdown.show .dropdown-menu img {
+  max-width: 100%;
+  max-height: 10rem;
+}
+.navbar-nav > li.dropdown.show .dropdown-menu .dropdown-item:hover {
+  background-color: transparent;
+  /* border-radius: 20px; */
+}
+.navbar-nav > li.dropdown.show .dropdown-menu .dropdown-item:hover img {
+  animation-name: zoomIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.navbar-nav > li.dropdown.show .dropdown-menu .orange-box {
+  position: absolute;
+  width: 33.33%;
+  height: 100%;
+  background: #ff7f2c;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
 }
 
 .banner {
@@ -52,6 +189,7 @@
   position: absolute;
   top: 650px;
   width: 100%;
+  overflow: hidden;
   z-index: -2;
   filter: drop-shadow(0px 10px 5px #000);
 }
@@ -70,7 +208,7 @@
   cursor: default;
 }
 .item1 .innerdiv .bluebox h1 {
-  color: #008cff;
+  color: #00B8FC;
   padding-bottom: 50px;
 }
 .item1 .innerdiv .bluebox p {
@@ -80,11 +218,11 @@
   font-size: 45px;
 }
 .item1 .innerdiv .bluebox .btn-primary {
-  background-color: #008cff;
+  background-color: #00B8FC;
   font-size: 20px;
 }
 .item1 .innerdiv .bluebox:hover {
-  background-color: #008cff;
+  background-color: #00B8FC;
 }
 .item1 .innerdiv .bluebox:hover h1 {
   color: #1B1B90;
@@ -93,7 +231,7 @@
   background-color: #1B1B90;
 }
 .item1 .innerdiv .bluebox:hover .btn-primary:hover {
-  background-color: #008cff;
+  background-color: #00B8FC;
 }
 @media only screen and (max-width: 762px) {
   .item1 .innerdiv .bluebox {
@@ -208,15 +346,23 @@
   color: #313131;
 }
 
-footer {
+.bussinesclients-2 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  color: #313131;
+}
+
+.index-footer {
   position: relative;
   top: 2000px;
   height: 300px;
-  background-color: #008cff;
+  background-color: #00B8FC;
   padding: 20px;
   color: #fff;
 }
-footer .bancos1 {
+.index-footer .bancos1 {
   position: relative;
   background-color: #ebedef;
   top: 30px;
@@ -225,17 +371,17 @@ footer .bancos1 {
   width: 305px;
   clip-path: polygon(0 0, 88% 0, 100% 100%, 0% 100%);
 }
-footer .bancos1 img {
+.index-footer .bancos1 img {
   height: 30px;
   padding-right: 50px;
 }
-footer .bancos1 #visa {
+.index-footer .bancos1 #visa {
   padding-left: 30px;
 }
-footer .bancos1 #mastercard {
+.index-footer .bancos1 #mastercard {
   height: 40px;
 }
-footer .bancos2 {
+.index-footer .bancos2 {
   position: relative;
   background-color: #ebedef;
   top: 60px;
@@ -244,13 +390,59 @@ footer .bancos2 {
   width: 355px;
   clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
 }
-footer .bancos2 img {
+.index-footer .bancos2 img {
   height: 40px;
 }
-footer .bancos2 div {
+.index-footer .bancos2 div {
   padding: 10px;
 }
-footer .bancos2 .bpichincha {
+.index-footer .bancos2 .bpichincha {
+  background-color: #fd0;
+  text-align: center;
+}
+
+.general-footer {
+  position: relative;
+  background-color: #00B8FC;
+  padding: 20px;
+  color: #fff;
+  height: 300px;
+}
+.general-footer .bancos1 {
+  position: relative;
+  background-color: #ebedef;
+  top: 30px;
+  left: -20px;
+  padding: 10px;
+  width: 305px;
+  clip-path: polygon(0 0, 88% 0, 100% 100%, 0% 100%);
+}
+.general-footer .bancos1 img {
+  height: 30px;
+  padding-right: 50px;
+}
+.general-footer .bancos1 #visa {
+  padding-left: 30px;
+}
+.general-footer .bancos1 #mastercard {
+  height: 40px;
+}
+.general-footer .bancos2 {
+  position: relative;
+  background-color: #ebedef;
+  top: 60px;
+  left: -5px;
+  padding: 0px;
+  width: 355px;
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+}
+.general-footer .bancos2 img {
+  height: 40px;
+}
+.general-footer .bancos2 div {
+  padding: 10px;
+}
+.general-footer .bancos2 .bpichincha {
   background-color: #fd0;
   text-align: center;
 }
@@ -290,6 +482,10 @@ footer .bancos2 .bpichincha {
     background-color: #fd0;
     text-align: center;
   }
+
+  .footer2 {
+    top: 0;
+  }
 }
 .contenedor_carga {
   background-color: #1B1B90;
@@ -313,16 +509,174 @@ footer .bancos2 .bpichincha {
   height: 100%;
 }
 
-.caja3 {
-  /* &:hover{
-      animation-name: sombraIzquierda;
-      animation-duration: 1s;
-      animation-iteration-count: 1;
-      padding-left: 0;
-      -webkit-box-shadow: -67px 0px 40px 22px rgba(0,140,255,1);
-      -moz-box-shadow: -67px 0px 40px 22px rgba(0,140,255,1);
-      box-shadow: -67px 0px 40px 22px rgba(0,140,255,1);
-  } */
+.enmarcado-blanco {
+  left: 0;
+  border: 30px solid #fff;
+  width: 60%;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  transform: rotate(15deg);
+}
+.enmarcado-blanco img {
+  width: 100%;
+}
+
+.background-azul {
+  background-color: #1B1B90;
+}
+
+.product-list {
+  background-color: #1B1B90;
+  padding: 1rem;
+  grid-template-columns: max-content;
+}
+
+.product-item {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  border: 0px solid #000000;
+  overflow: hidden;
+  margin-top: 10px;
+  font-family: myriad-pro, sans-serif;
+  font-style: normal;
+}
+.product-item:hover .product-description {
+  animation-name: text-show;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.product-item:hover .btn-buy {
+  animation-name: btn-show;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.product-item:hover .product-price {
+  animation-name: centerToLeft;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.product-item img {
+  position: relative;
+  width: 100%;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  z-index: 1;
+}
+.product-item .img-total-item {
+  position: relative;
+  align-items: center;
+}
+.product-item .img-item {
+  position: absolute;
+  top: 0;
+  width: auto;
+  text-align: center;
+}
+.product-item .img-logo {
+  position: absolute;
+  bottom: 2%;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.product-item .product-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.product-item .product-footer {
+  width: 100%;
+  text-align: center;
+}
+.product-item .product-footer .row {
+  margin: 0;
+}
+.product-item .product-description {
+  /* display: none; */
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  text-align: left;
+  position: relative;
+  z-index: 0;
+  transform: scaleY(0);
+  margin-top: -60px;
+  animation-name: text-hidden;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.product-item .product-price {
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  animation-name: leftToCenter;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.product-item .btn-buy {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%) scaleY(0);
+  margin-top: -60px;
+  animation-name: btn-hidden;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.product-item .col-9, .product-item .col-3 {
+  line-height: 0;
+}
+
+.watermark {
+  position: absolute;
+  top: 0;
+  width: auto;
+  text-align: center;
+  opacity: 0;
+  z-index: 10;
+}
+
+.header-bg-image {
+  background-color: #fff;
+  border-radius: 0px 0px 40px 40px;
+  -moz-border-radius: 0px 0px 40px 40px;
+  -webkit-border-radius: 0px 0px 40px 40px;
+  border: 0px solid #000000;
+  color: #1B1B90;
+}
+.header-bg-image .nav-link {
+  color: #1B1B90;
+}
+.header-bg-image .img-bg {
+  width: 100%;
+}
+
+.cart .money {
+  text-align: right;
+}
+.cart .center {
+  text-align: center;
+}
+.cart .cart-cant {
+  width: 3em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  border-color: #ebedef;
+  border-radius: 20px;
+}
+.cart .btn-circle {
+  width: 2em;
+  height: 2em;
+  border-radius: 50px;
 }
 
 @keyframes flotador {
@@ -346,6 +700,96 @@ footer .bancos2 .bpichincha {
     -webkit-box-shadow: -67px 0px 40px 22px #008cff;
     -moz-box-shadow: -67px 0px 40px 22px #008cff;
     box-shadow: -67px 0px 40px 22px #008cff;
+  }
+}
+@keyframes text-show {
+  from {
+    top: -50px;
+    transform: scaleY(0);
+    margin-top: -60px;
+    line-height: 0;
+  }
+  to {
+    top: 0;
+    transform: scaleY(1);
+    margin-top: 0;
+    line-height: 1.5;
+  }
+}
+@keyframes text-hidden {
+  from {
+    top: 0;
+    transform: scaleY(1);
+    margin-top: 0;
+    line-height: 1.5;
+  }
+  to {
+    top: -50px;
+    transform: scaleY(0);
+    margin-top: -60px;
+    line-height: 0;
+  }
+}
+@keyframes btn-show {
+  from {
+    top: -50px;
+    -ms-transform: translateY(50%) scaleY(0);
+    -webkit-transform: translateY(50%) scaleY(0);
+    transform: translateY(50%) scaleY(0);
+    margin-top: -60px;
+    line-height: 0;
+  }
+  to {
+    top: 0;
+    -ms-transform: translateY(50%) scaleY(1);
+    -webkit-transform: translateY(50%) scaleY(1);
+    transform: translateY(50%) scaleY(1);
+    margin-top: 0;
+    line-height: 1.5;
+  }
+}
+@keyframes btn-hidden {
+  from {
+    top: 0;
+    -ms-transform: translateY(50%) scaleY(1);
+    -webkit-transform: translateY(50%) scaleY(1);
+    transform: translateY(50%) scaleY(1);
+    margin-top: 0;
+    line-height: 1.5;
+  }
+  to {
+    top: -50px;
+    -ms-transform: translateY(50%) scaleY(0);
+    -webkit-transform: translateY(50%) scaleY(0);
+    transform: translateY(50%) scaleY(0);
+    margin-top: -60px;
+    line-height: 0;
+  }
+}
+@keyframes centerToLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+}
+@keyframes leftToCenter {
+  from {
+    transform: translateX(-40%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes zoomIn {
+  from {
+    -webkit-transform: none;
+    transform: none;
+  }
+  to {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 

@@ -1,0 +1,46 @@
+$naranja: #ff7f2c;
+$violeta: #814EFA;
+$celeste: #00B8FC;
+$rojo: #FF2947;
+$turquesa: #00EAD0;
+$verde-limon: #DCFD00;
+
+@mixin color-bg($color) {
+    &:hover{
+        background-color: $color;
+        cursor: pointer;
+        /* 
+        -webkit-text-stroke: 0.5px $negro;
+        color: $blanco;  */
+    }
+    
+}
+.orange-bg{
+    @include color-bg($naranja);
+}
+
+.violet-bg{
+    @include color-bg($violeta);
+    &:hover{
+        color: #fff;
+    }
+}
+
+.lightblue-bg{
+    @include color-bg($celeste);
+}
+
+.red-bg{
+    @include color-bg($rojo);
+    &:hover{
+        color: #fff;
+    }
+}
+
+.turquoise-bg{
+    @include color-bg($turquesa);
+}
+
+.limegreen-bg{
+    @include color-bg($verde-limon);
+}

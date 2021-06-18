@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="fontawesome/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css"> -->
-    <title>MachTec</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/bootstrap-reboot.css"> -->
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>MachTec</title>
 </head>
 <body>
   <div class="contenedor_carga">
@@ -18,7 +19,9 @@
     </div>
   </div>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">Machtec</a>
+        <a class="navbar-brand" href="#">
+          <img src="./img/MT-white.svg" width="40" height="40" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,10 +29,52 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <!-- <div class="white-box"></div> -->
+              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+              
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Productos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <img src="./img/cpu1.png" alt="">
+                    </div>
+                    <div class="col-sm-12">
+                      Computadoras
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item" href="productos.html">
+                  <div class="row">
+                    <!-- <img src="" alt=""> -->
+                    <div class="col-sm-12">
+                      Laptops
+                    </div>
+                    <div class="col-sm-12">
+                      <img src="./img/laptopMach.png" alt="">
+                    </div>
+                  </div>
+                </a>
+                <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" href="#">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <img src="./img/accesorios.png" alt="">
+                    </div>
+                    <div class="col-sm-12">
+                      Accesorios
+                    </div>
+                  </div>
+                </a>
+                <div class="orange-box"></div>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="servicios.html">Servicios</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -38,7 +83,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
+                <!-- <div class="dropdown-divider"></div> -->
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
@@ -105,12 +150,16 @@
 
         </div>
         <div class="fondo">
-          <div class="presentacion1">
-            <img class="anim-1"  alt="cel">
-            <img class="anim-2" src="" alt="laptop">
+          <div class="presentacion1"><!-- item intermedio -->
+            <img class="anim-1 animate__animated animate__fadeOut"  alt="cel">
+            <img class="anim-2 animate__animated animate__fadeOut" src="" alt="laptop">
           </div>
           <div class="presentacion2"></div>
-          <div class="presentacion3"></div>
+          <div class="presentacion3 animate__animated animate__fadeOutRight">
+            <div class="enmarcado-blanco">
+              <img src="https://cdn.pixabay.com/photo/2020/06/06/16/40/milk-5267300_960_720.jpg" alt="">
+            </div>
+          </div>
         </div>   
       </div>
       
@@ -153,7 +202,7 @@
     holaaa
   </div>
 
-  <footer>
+  <footer class="index-footer">
     <h2>Paga con</h2>
     <div class="bancos1">
       <img src="img/visa.svg" alt="" id="visa">
@@ -169,85 +218,9 @@
     </div>
   </footer>
     
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <script>
-    window.onload = function(){
-      /* setTimeout(function(){ */
-        var contenedor = $('.contenedor_carga');
-        //contenedor.css("visibility","hidden");
-        //contenedor.css("opacity","0");
-        contenedor.addClass('animate__animated animate__fadeOutUp');
-      /* },3000); */
-      
-    }
-  </script>
-  <script>
-    setTimeout(() => {
-      $('.laptop-cel-1').addClass('animate__animated animate__fadeOutUp');
-    }, 5500);
-    var ancho = $(window).width();
-    if(ancho > 762){
-      function ingresoBox(box2,box3){
-        $(box2).find('div').removeClass('animate__fadeInDown').addClass('animate__animated animate__fadeOutUp');
-        $(box3).find('div').removeClass('animate__fadeInDown').addClass('animate__animated animate__fadeOutUp');
-      };
-      function salidaBox(box2,box3){
-        $(box2).find('div').removeClass('animate__fadeOutUp').addClass('animate__fadeInDown');
-        $(box3).find('div').removeClass('animate__fadeOutUp').addClass('animate__fadeInDown');
-      };
-      
-      $('.caja1').hover(function(){      
-        ingresoBox('.caja2','.caja3');      
-      },function(){
-        salidaBox('.caja2','.caja3')
-      });
-
-      $('.caja2').hover(function(){      
-        ingresoBox('.caja1','.caja3');      
-        $('.anim-1').attr("src","img/animacion-cel.gif").removeClass('animate__fadeOut').addClass('animate__animated animate__fadeIn');
-        $('.anim-2').attr("src","img/animacion-laptop.gif").removeClass('animate__fadeOut').addClass('animate__animated animate__fadeIn');
-        setTimeout(() => {
-          $('.anim-1').attr("src","img/static-cel.png");
-        }, 4500);
-        setTimeout(() => {
-          $('.anim-2').attr("src","img/static-laptop.png");
-        }, 3500);
-      },function(){
-        salidaBox('.caja1','.caja3');
-        $('.anim-1').removeClass('animate__fadeIn').addClass('animate__fadeOut');
-        $('.anim-2').removeClass('animate__fadeIn').addClass('animate__fadeOut');
-      });
-
-      $('.caja3').hover(function(){      
-        ingresoBox('.caja1','.caja2');      
-      },function(){
-        salidaBox('.caja1','.caja2')
-      });
-      
-      //item2
-      $('.caja4').hover(function(){      
-        ingresoBox('.caja5','.caja6');      
-      },function(){
-        salidaBox('.caja5','.caja6')
-      });
-
-      $('.caja5').hover(function(){      
-        ingresoBox('.caja4','.caja6');      
-      },function(){
-        salidaBox('.caja4','.caja6')
-      });
-
-      $('.caja6').hover(function(){      
-        ingresoBox('.caja4','.caja5');      
-      },function(){
-        salidaBox('.caja4','.caja5')
-      });
-    }else{
-      $('.fondo').css('display','none');
-    }
-    
-  </script>
+  <script src="./js/animaciones.js"></script>
 </body>
 </html>
